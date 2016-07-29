@@ -2,15 +2,26 @@ body {
     background-color: #d7cec7;
 }
 
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+.specifics h2 {
+    display: inline;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
     color: inherit;
 }
 
-h3 a {
-    font-weight: bolder; /* ??? */
-}
+/*h3 a {
+    font-weight: bolder;
+}*/
 
 a:visited {
     color: inherit;
@@ -20,8 +31,9 @@ a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    text-align: center;
+.content li {
+    /*line-height: 98%;*/
+    margin-bottom: 8px;
 }
 
 .container {
@@ -32,33 +44,54 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
-    margin-bottom: 10px;
-}
-
 .content {
     background-color: #e1dbd6; /*#d9d9d9;*/
     padding: 1px 10px;
     margin: 0 12px;
 }
 
+.badge-info {
+    margin-top: 50px;
+    /* Give it a background that's
+    different from the caption background. */
+}
+.badge-info p {
+    /*padding: 7px 0;*/
+    /*margin: 0 auto;*/
+}
+
+.img-block {
+    /*position: relative;*/
+    background-color: #e1dbd6;
+    width: 70%;
+    margin: 25px auto;
+    padding: 15px;
+}
+
 img.badge {
     display: block;
-    width: 45%;
-    height: 45%;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 
-.caption {
-    display: block;
-    position: relative;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 10px;
+/*.caption {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*margin: auto;*/
+    /*margin-bottom: 15px;*/
+    /*padding: 10px;*/
+    /*text-align: center;*/
+    /*font-size: 1em;*/
+    /*background-color: #e1dbd6;*/
+/*}*/
+p.caption {
+    padding: 7px 4px;
     text-align: center;
     font-size: 1em;
-    background-color: #e1dbd6;
+    margin: auto;
+    /*width: 100%;*/
 }
 
 table {
@@ -96,10 +129,10 @@ td {
 .colorcell + td {
     width: 25%;
 }
-td li {
+/*td li {
     line-height: 98%;
     margin-bottom: 8px;
-}
+}*/
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
