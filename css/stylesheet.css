@@ -16,15 +16,15 @@ h2 {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: inherit;
+    color: #0000b3;
 }
 
-/*h3 a {
+h3 a {
     font-weight: bolder;
-}*/
+}
 
 a:visited {
-    color: inherit;
+    color: #cc0000;
 }
 
 a:hover {
@@ -32,7 +32,6 @@ a:hover {
 }
 
 .content li {
-    /*line-height: 98%;*/
     margin-bottom: 8px;
 }
 
@@ -61,7 +60,6 @@ a:hover {
 }
 
 .img-block {
-    /*position: relative;*/
     background-color: #e1dbd6;
     width: 70%;
     margin: 25px auto;
@@ -75,27 +73,14 @@ img.badge {
     margin: auto;
 }
 
-/*.caption {*/
-    /*display: block;*/
-    /*position: relative;*/
-    /*width: 100%;*/
-    /*margin: auto;*/
-    /*margin-bottom: 15px;*/
-    /*padding: 10px;*/
-    /*text-align: center;*/
-    /*font-size: 1em;*/
-    /*background-color: #e1dbd6;*/
-/*}*/
 p.caption {
     padding: 7px 4px;
     text-align: center;
     font-size: 1em;
     margin: auto;
-    /*width: 100%;*/
 }
 
 table {
-    /*border: solid gray 3px;*/
     padding: 0;
 }
 td, th {
@@ -129,10 +114,9 @@ td {
 .colorcell + td {
     width: 25%;
 }
-/*td li {
+td li {
     line-height: 98%;
-    margin-bottom: 8px;
-}*/
+}
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
