@@ -35,9 +35,9 @@ a {
     color: #0000b3;
 }
 
-h3 a {
+/*h3 a {
     font-weight: bolder;
-}
+}*/
 
 a:visited {
     color: #cc0000;
@@ -161,7 +161,8 @@ td li {
         margin: 0 -1.5%;
         padding: 0;
         border: 0;
-        border-top: 12px solid #c0c1db;
+        border-top: 12px solid #2876AE;
+        border-radius: 10px;
     }
     .section {
         margin: 18px auto 30px;

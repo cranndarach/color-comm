@@ -1,0 +1,17 @@
+body {
+    background-color: #ffeaa3;
+    color: #000000;
+}
+.content,
+.badge-text,
+.img-block {
+    background-color: #fff3cc;
+}
+a {
+    color: #8e3500;
+}
+@media only screen and (min-width: 768px) {
+    hr.sup {
+        border-color: #ff9800;
+    }
+}

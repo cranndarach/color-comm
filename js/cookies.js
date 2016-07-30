@@ -8,7 +8,7 @@ var cookieTail = "; max-age=" + cookieDur +
     "; path=" + cookiePath + "; domain=" + cookieDomain;
 
 var setTheme = function(theme) {
-    document.getElementById("theme").href = "css/theme_" + theme + ".css";
+    document.getElementById("theme").href = "css/theme-" + theme + ".css";
     document.getElementById("theme").rel = "stylesheet";
     document.cookie = "theme=" + theme + cookieTail;
     cookieTail = null;

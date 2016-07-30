@@ -1,0 +1,22 @@
+body {
+    background-color: #000000;
+    color: #ffff00;
+    font-weight: bold;
+    /*font-size: 110%;*/
+}
+.content,
+.badge-text,
+.img-block {
+    background-color: #000000;
+}
+a {
+    color: #ff9900;
+}
+a:visited{
+    color: #00ff00;
+}
+@media only screen and (min-width: 768px) {
+    hr.sup {
+        border-color: #ffff00;
+    }
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: #404040;
+    color: #e0e2e4;
+}
+.content,
+.badge-text {
+    background-color: #595959;
+}
+.img-block {
+    background-color: #595959;
+    /*background-color: #808080;
+    color: #f1f2f3;*/
+}
+img.badge {
+    opacity: 0.85;
+    background-color: #0c0d0e;
+    border: solid #0c0d0e;
+    border-radius: 8px;
+}
+hr.sub {
+    border-color: #999999;
+}
+a {
+    color: #99bbff;
+}
+a:visited{
+    color: #c6b3ff;
+}
+
+@media only screen and (min-width: 768px) {
+    hr.sup {
+        border-color: #cccccc;
+        border-radius: 10px;
+    }
+}
