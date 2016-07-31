@@ -49,3 +49,54 @@ navdec {
     padding: 0 5px;
     line-height: 70%;
 }
+
+@media only screen and (min-width: 768px) {
+    .anchor {
+        display: block;
+        height: 55px;
+        margin-top: -55px;
+        padding: 0;
+        visibility: hidden;
+    }
+    .content-nav {
+        display: inline-block;
+        list-style-type: none;
+        top: 55px;
+        left: 0;
+        /*float: left;*/
+        margin: 0;
+        padding: 10px;
+        padding-left: 18px;
+        background-color: #e1dbd6;
+        border-right: solid black 1px;
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 15%;
+        z-index: 9;
+    }
+    .content-nav > li {
+        margin-bottom: 10px;
+    }
+    .content-nav .head {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: underline;
+        margin: 5px;
+        margin-left: -8px;
+        background-color: inherit;
+    }
+    .content-nav .head p {
+        margin: 0 auto;
+    }
+    .content-nav a {
+        color: #0000b3;
+    }
+    .main {
+        display: inline-block;
+        position: relative;
+        margin: auto;
+        margin-left: 20%;
+        width: 75%;
+    }
+}

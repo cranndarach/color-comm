@@ -4,6 +4,9 @@ body {
     font-weight: bold;
     /*font-size: 110%;*/
 }
+strong {
+    font-weight: bolder;
+}
 .content,
 .badge-text,
 .img-block {

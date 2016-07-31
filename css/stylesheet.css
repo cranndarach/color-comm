@@ -74,6 +74,7 @@ a:hover {
     background-color: #e1dbd6;
     width: 70%;
     margin: 25px auto;
+    margin-top: 0;
     padding: 15px;
 }
 
@@ -170,11 +171,11 @@ td li {
     }
     .container {
         font-size: 1.1em;
-        width: 75%;
+        width: 100%;
     }
-    #green {
+    /*#green {
         margin-top: -15px;
-    }
+    }*/
     img.badge {
         width: 50%;
         height: 50%;
