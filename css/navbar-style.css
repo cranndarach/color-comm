@@ -49,6 +49,25 @@ navdec {
     line-height: 70%;
 }
 
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    background-color: #41413d;
+    color: #f3f3f2;
+}
+.footer a {
+    text-decoration: underline;
+    color: #f3f3f2;
+    font-weight: normal;
+}
+.footer a:visited {
+    color: #f3f3f2;
+}
+
+
+
 @media only screen and (min-width: 768px) {
     .anchor {
         display: block;
@@ -113,5 +132,16 @@ navdec {
         margin: auto;
         margin-left: 20%;
         width: 75%;
+        padding-bottom: 2.5em;
+    }
+    .footer {
+        width: 85%;
+        height: 1.5em;
+        margin-left: 15%;
+        padding: 3px 0 1px;
+        /*margin-left: 20%;*/
+        position: absolute;
+        bottom: 0;
+        /*top: */
     }
 }
