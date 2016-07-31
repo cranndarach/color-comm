@@ -65,33 +65,76 @@ navdec {
         left: 0;
         /*float: left;*/
         margin: 0;
-        padding: 10px;
-        padding-left: 18px;
+        padding: 0;
+        /*padding: 10px;*/
+        /*padding-left: 18px;*/
         background-color: #e1dbd6;
-        border-right: solid black 1px;
-        overflow: hidden;
+        /*border-right: solid black 1px;*/
+        /*overflow: hidden;*/
         position: fixed;
         height: 100%;
         width: 15%;
         z-index: 9;
     }
     .content-nav > li {
-        margin-bottom: 10px;
+        margin: 0;
+        padding: 0;
     }
+    .content-nav li ul {
+        list-style-type: none;
+        margin-left: -10px;
+    }
+    /*.content-nav > li {
+        margin-bottom: 10px;
+    }*/
     .content-nav .head {
         font-size: 1.2em;
         font-weight: bold;
         text-decoration: underline;
         margin: 5px;
-        margin-left: -8px;
+        /*margin-left: -8px;*/
         background-color: inherit;
     }
     .content-nav .head p {
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .content-nav a {
-        color: #0000b3;
+        margin: 0;
+        padding: 5px;
+        padding-left: 8px;
+        display: block;
+        /*height: 100%;*/
+        /*width: 100%;*/
+        background-color: #4485B4;
+        border-top: solid #184668 1px;
+        border-bottom: solid #184668 1px;
+        /*border-left: solid #2876AE 3px;*/
+        color: #e9e5e2;
+        font-weight: normal;
     }
+    .content-nav a:visited {
+        color: #e9e5e2;
+    }
+    /*a.n2 {
+        background-color: #e1dbd6;
+        border-left: solid #e1dbd6 3px;
+        color: #184668;
+        border-bottom: solid #2876AE 3px;
+    }
+    a.n2:visited {
+        color: #184668;
+    }*/
+    .content-nav a:hover {
+        background-color: #184668;
+        color: #e1dbd6;
+        text-decoration: none;
+        /*border-left: solid #184668 3px;*/
+    }
+    /*a.n2:hover {
+        color: #e1dbd6;
+        background-color: #2876AE;
+        border-left: solid #e1dbd6 3px;
+    }*/
     .main {
         display: inline-block;
         position: relative;
