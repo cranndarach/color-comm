@@ -71,7 +71,7 @@ navdec {
 .content-nav li ul {
     list-style-type: none;
     display: inline;
-    padding: 0; /******/
+    padding: 0;
 }
 .content-nav .head {
     font-size: 1.2em;
@@ -234,6 +234,7 @@ navdec {
     /* Section containing the page-specific content;
         the part next to the sidebar (on desktop) */
     .main {
+        top: 0;
         display: inline-block;
         position: relative;
         margin: auto;
