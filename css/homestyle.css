@@ -1,0 +1,44 @@
+h1 {
+    margin: 15px;
+}
+
+.row {
+    display: block;
+    margin: 20px 5%;
+}
+
+.toc {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 90%;
+    /*height: 310px;*/
+    margin: 10px;
+    padding: 15px;
+    background-color: #4485B4;
+    color: #e9e5e2;
+}
+
+.toc h2,
+h2.message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toc a {
+    color: inherit;
+}
+.toc a:visited {
+    color: inherit;
+}
+.toc a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    .toc {
+        width: 42%;
+        margin: 20px;
+        height: 310px;
+    }
+}
