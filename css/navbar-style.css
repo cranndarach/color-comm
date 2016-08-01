@@ -1,3 +1,5 @@
+/* Mobile first */
+/* Top navigation */
 .nav {
     list-style-type: none;
     margin: 0;
@@ -23,18 +25,18 @@
     text-align: center;
     color: #f3f3f2;
     text-decoration: none;
-    /*border-top: solid #41413d 5px;*/
     border-bottom: solid #1a1a19 5px;
 }
 
 a.head {
     background-color: #b3ffb3;
     color: #41413d;
-    border-bottom: solid #b3ffb3 5px;
+    border-bottom: solid #1a1a19 5px;
 }
 
 a.active {
-    border-left: solid #b3ffb3 5px
+    border-left: solid #b3ffb3 10px;
+    padding-left: 2px;
 }
 
 navdec {
@@ -45,6 +47,52 @@ navdec {
     line-height: 70%;
 }
 
+
+/* Within-page navigation */
+.content-nav {
+    position: relative;
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    left: -5%;
+    width: 110%;
+}
+.content-nav span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.content-nav li {
+    display: inline;
+    margin: 0 1px;
+    padding: 0;
+}
+.content-nav li ul {
+    list-style-type: none;
+    display: inline;
+    padding: 0; /******/
+}
+.content-nav .head {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 5px;
+    /*background-color: inherit;*/
+}
+.content-nav .head p {
+    margin: 10px auto;
+}
+.content-nav a {
+    margin: 0;
+    color: #0000b3;
+    text-decoration: underline;
+}
+.content-nav a:visited {
+    color: #0000b3;
+}
+
+
+/* Footer */
 .footer {
     width: 100%;
     margin: 0;
@@ -92,6 +140,7 @@ navdec {
     a.active {
         border-top: solid #b3ffb3 5px;
         border-left: 0;
+        padding-left: 12px;
     }
 
     navdec {
@@ -111,25 +160,34 @@ navdec {
 
     /* Within-page navigation (sidebar on desktop) */
     .content-nav {
+        position: fixed;
         display: inline-block;
-        list-style-type: none;
         top: 55px;
         left: 0;
         margin: 0;
         padding: 0;
         background-color: #e1dbd6;
-        position: fixed;
         height: 100%;
         width: 15%;
         z-index: 9;
     }
-    .content-nav > li {
+    .content-nav span {
+        display: none;
+    }
+    .content-nav li {
+        display: block;
         margin: 0;
         padding: 0;
     }
+    .content-nav > li {
+
+    }
     .content-nav li ul {
         list-style-type: none;
-        margin-left: -10px;
+        display: block;
+        padding: inherit;
+        /*margin-left: -10px;*/
+        padding-left: 30px;
     }
     .content-nav .head {
         font-size: 1.2em;
