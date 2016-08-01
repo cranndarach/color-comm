@@ -50,13 +50,15 @@ navdec {
 
 /* Within-page navigation */
 .content-nav {
+    /*background-color: #e1dbd6;*/
     position: relative;
     display: block;
     list-style-type: none;
-    padding: 0;
-    margin: auto;
+    padding-left: 10px;
+    margin: 0 auto 10px;
+    /*top: -15px;*/
     left: -5%;
-    width: 110%;
+    width: 100%;
 }
 .content-nav span {
     font-weight: bold;
@@ -80,7 +82,7 @@ navdec {
     /*background-color: inherit;*/
 }
 .content-nav .head p {
-    margin: 10px auto;
+    margin: 0 auto 10px;
 }
 .content-nav a {
     margin: 0;
@@ -89,6 +91,19 @@ navdec {
 }
 .content-nav a:visited {
     color: #0000b3;
+}
+
+.main {
+    top: -55px;
+}
+
+/* Anchor links from within-page nav */
+.anchor {
+    display: block;
+    height: 0;
+    /*margin-top: -5px;*/
+    padding: 0;
+    visibility: hidden;
 }
 
 
@@ -178,9 +193,6 @@ navdec {
         display: block;
         margin: 0;
         padding: 0;
-    }
-    .content-nav > li {
-
     }
     .content-nav li ul {
         list-style-type: none;

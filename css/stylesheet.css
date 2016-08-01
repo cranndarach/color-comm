@@ -150,7 +150,7 @@ td li {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
-    .container {
+    /*.container {
         top: 55px;
         width: 80%;
     }
@@ -159,9 +159,9 @@ td li {
         height: 70%;
     }
     .caption {
-        /*width: 45%;*/
+        /*width: 45%;/
     }
-}
+}*/
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
@@ -188,6 +188,7 @@ td li {
         /*margin-top: 10px;*/
     }
     .container {
+        top: 55px;
         font-size: 1.1em;
         width: 100%;
         height: 100%;
