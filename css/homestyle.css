@@ -5,6 +5,7 @@ h1 {
 .row {
     display: block;
     margin: 20px 5%;
+    /*margin: auto;*/
 }
 
 .toc {
@@ -36,6 +37,9 @@ h2.message {
 }
 
 @media only screen and (min-width: 768px) {
+    .row {
+        margin: 20px 15%;
+    }
     .toc {
         width: 42%;
         margin: 20px;
