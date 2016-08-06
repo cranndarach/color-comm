@@ -3,7 +3,7 @@
 //var cookieFont;
 var cookieDur = 60 * 60 * 24 * 90; // lasts 90 days
 var cookiePath = "/";
-var cookieDomain = "http://cranndarach.github.io/color-comm";
+var cookieDomain = "cranndarach.github.io/color-comm";
 var cookieTail = "; max-age=" + cookieDur +
     "; path=" + cookiePath + "; domain=" + cookieDomain;
 
