@@ -5,10 +5,8 @@ body {
 /*p {
     color: #141f1c;
 }*/
-.content,
-.badge-text,
-.img-block,
-td {
+.content, .badge-text,
+.img-block, td {
     background-color: #fff3cc;
 }
 .tblhead,

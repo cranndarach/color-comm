@@ -2,24 +2,44 @@ body {
     background-color: #000000;
     color: #ffff00;
     font-weight: bold;
-    /*font-size: 110%;*/
+    font-size: 110%;
 }
 strong {
     font-weight: bolder;
 }
-.content,
-.badge-text,
-.img-block {
+.content, .badge-text,
+.img-block, td {
     background-color: #000000;
+}
+.tblhead, .toc {
+    background-color: #262626;
+    color: #ff0;
+}
+td, th, .tblhead {
+    border-color: #262626;
+}
+#yellow-cell, #red-cell {
+    color: #000;
 }
 a {
     color: #ff9900;
+    text-decoration: underline;
 }
-a:visited{
+a:visited {
     color: #00ff00;
 }
 @media only screen and (min-width: 768px) {
     hr.sup {
         border-color: #ffff00;
+    }
+    .content-nav {
+        background-color: #262626;
+    }
+    .content-nav a,
+    .content-nav a:visited,
+    .content-nav a:hover {
+        background-color: #000;
+        color: #ff0;
+        border-color: #000;
     }
 }
