@@ -3,7 +3,7 @@
 //var cookieFont;
 var cookieDur = 60 * 60 * 24 * 90; // lasts 90 days
 var cookiePath = "/";
-var cookieDomain = "http://cranndarach.github.io/color-comm";
+var cookieDomain = "file:///C:/Users/Rachael/Projects/ColorComm" //"http://cranndarach.github.io/color-comm";
 var cookieTail = "; max-age=" + cookieDur +
     "; path=" + cookiePath + "; domain=" + cookieDomain;
 
@@ -13,17 +13,17 @@ var setTheme = function(theme) {
     document.cookie = "theme=" + theme + cookieTail;
     cookieTail = null;
 }
-var setAccess = function(face) {
-    var pct = document.getElementById("usrSize").value;
+var setFont = function(face) {
+    //var pct = document.getElementById("usrSize").value;
     //var face = document.getElementById("usrFace").value;
     // originally from cranndarach/moonphase
     var ff;
     switch(face) {
         case 'serif':
-            ff = '"Palatino Linotype", "Book Antiqua", Palatino, serif';
+            ff = 'Georgia, "Palatino Linotype", Palatino, seriff';
             break;
         case 'sans':
-            ff = 'Georgia, "Trebuchet MS", Helvetica, sans-serif';
+            ff = 'Tahoma, "Trebuchet MS", Helvetica, sans-serif';
             break;
         case 'open-dyslexic':
             ff = 'open-dyslexic, sans-serif';
@@ -33,15 +33,25 @@ var setAccess = function(face) {
         //     break;
     }
     // end portion from cranndarach/moonphase
-    var accessCss = 'body { font-size: ' + pct + '%; font-family: ' + ff + '; }';
-    document.getElementById("access").innerHTML = accessCss;
-
-    document.cookie = "font-size=" + size + "; font-family=" + face + cookieTail;
-    cookieTail = null;
+    var fontCss = 'body { font-family: ' + ff + '; }';
+    document.getElementById("usrFont").innerHTML = fontCss;
+    document.cookie =  "font-family=" + face + cookieTail;
+    //cookieTail = null;
+}
+var setSize = function() {
+    var pct = document.getElementById("set-size").value;
+    var sizeCss = 'body {\
+            font-size: ' + pct + '% \
+        };'
+    document.getElementById("usrSize").innerHTML = sizeCss;
+    document.cookie = "font-size=" + pct + cookieTail;
 }
 
 var getCookies = function() {
     var cookie = document.cookie;
+    console.log("Attempting...");
+    console.log(cookie);
+    console.log("Done.");
     var cookieArr = cookie.split(';');
     var pairArr = [];
     for(var i = 0; i < cookieArr.length; i++) {
@@ -54,11 +64,14 @@ var getCookies = function() {
     }
     if(cookieObj["theme"]) {
         setTheme(cookieObj["theme"]);
+        console.log("Found theme cookie.");
     }
     if(cookieObj["font-size"]) {
-        document.getElementById("usrSize").value = cookieObj["usrSize"];
+        document.getElementById("set-size").value = cookieObj["font-size"];
+        console.log("Found size cookie.");
     }
     if(cookieObj["font-family"]) {
-        setAccess(cookieObj["font-family"]);
+        setFont(cookieObj["font-family"]);
+        console.log("Found font cookie.");
     }
 }

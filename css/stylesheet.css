@@ -1,7 +1,83 @@
+@font-face {
+    font-family: open-dyslexic; src: url('../OpenDyslexic3-Regular.ttf');
+}
 body {
     background-color: #d7cec7;
     margin: 0;
     height: 100%;
+}
+.access-control {
+    /*width: 550px;*/
+    width: 37em;
+    padding: 3px;
+    margin: 15px auto;
+    border: outset #404040 2px;
+}
+.theme-buttons {
+    width: 36em;
+    height: 65px;
+    margin: 5px auto;
+}
+.font-manip {
+    width: 36em;
+    margin: auto;
+}
+.theme-buttons button,
+.font-manip button {
+    width: 95px;
+    height: 60px;
+    margin: 2px;
+    border: outset 2px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.font-manip button {
+    background-color: #e1dbd6;
+}
+.theme-buttons span {
+    display: none;
+}
+#set-size {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+#light {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+#tan {
+    background-color: #d7cec7;
+    border-color: #2876AE;
+    color: #000;
+}
+#dark {
+    background-color: #404040;
+    border-color: #cccccc;
+    color: #e0e2e4;
+}
+#warm {
+    background-color: #ffeaa3;
+    color: #1d2f2a;
+    border-color: #ff9800;
+}
+#high-contrast {
+    background-color: #000;
+    color: #ff0;
+    border-color: #ff0;
+}
+#serif {
+    font-family: Georgia, "Palatino Linotype", Palatino, serif;
+    font-size: 1.08em;
+}
+#sans {
+    font-family: Tahoma, "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.08em;
+}
+#open-dyslexic {
+    font-family: open-dyslexic, sans-serif;
 }
 h1 {
     text-align: center;
