@@ -4,6 +4,9 @@ body {
     font-weight: bold;
     font-size: 110%;
 }
+#high-contrast span {
+    display: inline;
+}
 strong {
     font-weight: bolder;
 }

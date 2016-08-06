@@ -4,7 +4,11 @@
     <title>Additional Resources</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar-style.css" />
-    <link id="test-style" rel="stylesheet" type="text/css" href="css/theme-tan.css" />
+    <link id="theme" rel="alternate stylesheet" type="text/css" href="" />
+    <style id="usrFont"></style>
+    <style id="usrSize"></style>
+
+    <script src="js/cookies.js"></script>
 </head>
 
 <body>
@@ -40,6 +44,23 @@
         <div class="main">
             <span class="anchor" id="title"></span>
             <h1>Tips &amp; Resources</h1>
+            
+            <div class="access-control">
+                <strong>Accessibility options</strong> (uses cookies)
+                <div class="theme-buttons">
+                    <button id="light" onclick="setTheme('plain')">Light theme<br/><span>(Active)</span></button>
+                    <button id="high-contrast" onclick="setTheme('high-contrast')">High-contrast theme<br/><span>(Active)</span></button>
+                    <button id="dark" onclick="setTheme('dark')">Dark theme<br/><span>(Active)</span></button>
+                    <button id="tan" onclick="setTheme('tan')">Tan theme<br/><span>(Active)</span></button>
+                    <button id="warm" onclick="setTheme('warm')">Warm theme<br/><span>(Active)</span></button>
+                </div>
+                <div class="font-manip">
+                    <button id="serif" onclick="setFont('serif')">Serif</button>
+                    <button id="sans" onclick="setFont('sans')">Sans-Serif</button>
+                    <button id="open-dyslexic" onclick="setFont('open-dyslexic')">Open Dyslexic</button>
+                    Font size: <input id="set-size" type="number" min=15 max=300 value=100 oninput="setSize()" />&nbsp;%
+                </div>
+            </div>
 
             <span class="anchor" id="tips"></span>
             <div class="tips section">

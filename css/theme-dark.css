@@ -2,6 +2,9 @@ body {
     background-color: #404040;
     color: #e0e2e4;
 }
+#dark span {
+    display: inline;
+}
 .content,
 .badge-text,
 .img-block,

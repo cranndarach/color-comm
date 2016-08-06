@@ -2,6 +2,9 @@ body {
     background-color: #d7cec7;
     color: #000;
 }
+#tan span {
+    display: inline;
+}
 .content, .badge-text,
 .img-block, td {
     background-color: #e1dbd6;

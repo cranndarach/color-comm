@@ -5,6 +5,7 @@ body {
     background-color: #d7cec7;
     margin: 0;
     height: 100%;
+    font-family: Tahoma, "Trebuchet MS", Helvetica, sans-serif;
 }
 .access-control {
     /*width: 550px;*/
@@ -82,7 +83,7 @@ body {
 h1 {
     text-align: center;
     font-size: 2em;
-    margin: 5px auto;
+    margin: 15px 5px auto;
 }
 h2 {
     margin: 10px 0;
