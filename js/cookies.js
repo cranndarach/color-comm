@@ -10,8 +10,10 @@ var cookieTail = "; max-age=" + cookieDur +
 var setTheme = function(theme) {
     document.getElementById("theme").href = "css/theme-" + theme + ".css";
     document.getElementById("theme").rel = "stylesheet";
-    document.cookie = "theme=" + theme + cookieTail;
-    cookieTail = null;
+    var themeCookie = "theme=" + theme + cookieTail;
+    document.cookie = themeCookie;
+    console.log(themeCookie);
+    //cookieTail = null;
 }
 var setFont = function(face) {
     //var pct = document.getElementById("usrSize").value;
@@ -35,7 +37,9 @@ var setFont = function(face) {
     // end portion from cranndarach/moonphase
     var fontCss = 'body { font-family: ' + ff + '; }';
     document.getElementById("usrFont").innerHTML = fontCss;
-    document.cookie =  "font-family=" + face + cookieTail;
+    var fontCookie = "font-family=" + face + cookieTail;
+    document.cookie =  fontCookie;
+    console.log(fontCookie);
     //cookieTail = null;
 }
 var setSize = function() {
@@ -44,7 +48,9 @@ var setSize = function() {
             font-size: ' + pct + '% \
         };'
     document.getElementById("usrSize").innerHTML = sizeCss;
-    document.cookie = "font-size=" + pct + cookieTail;
+    var sizeCookie = "font-size=" + pct + cookieTail;
+    document.cookie = sizeCookie;
+    console.log(sizeCookie);
 }
 
 var getCookies = function() {
