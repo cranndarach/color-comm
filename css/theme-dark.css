@@ -3,19 +3,22 @@ body {
     color: #e0e2e4;
 }
 .content,
-.badge-text {
+.badge-text,
+.img-block,
+td {
     background-color: #595959;
-}
-.img-block {
-    background-color: #595959;
-    /*background-color: #808080;
-    color: #f1f2f3;*/
 }
 img.badge {
     opacity: 0.85;
     background-color: #0c0d0e;
     border: solid #0c0d0e;
     border-radius: 8px;
+}
+.colorcell {
+    opacity: 0.88;
+}
+#yellow-cell {
+    color: #404040;
 }
 hr.sub {
     border-color: #999999;
@@ -27,9 +30,40 @@ a:visited{
     color: #c6b3ff;
 }
 
+.nav,
+.footer {
+    background-color: #303030;
+}
+.nav a {
+    color: #f3f3f2;
+    border-color: #595959;
+}
+a.head {
+    background-color: #b3ffb3;
+    color: #41413d;
+    border-color: #b3ffb3;
+}
+a.active {
+    border-left: solid #b3ffb3 10px;
+}
+
+
 @media only screen and (min-width: 768px) {
     hr.sup {
         border-color: #cccccc;
         border-radius: 10px;
+    }
+    .content-nav {
+        background-color: #595959;
+    }
+    .nav a {
+        border-color: #303030;
+    }
+    a.head {
+        border-color: #b3ffb3;
+    }
+    a.active {
+        border-top: solid #b3ffb3 5px;
+        border-left: 0;
     }
 }
