@@ -3,26 +3,21 @@ body {
     margin: 0;
     height: 100%;
 }
-
 h1 {
     text-align: center;
     font-size: 2em;
     margin: 5px auto;
 }
-
 h2 {
     margin: 10px 0;
     font-size: 1.8em;
 }
-
 .specifics h2 {
     display: inline;
 }
-
 hr.sup {
     display: none;
 }
-
 hr.sub {
     height: 1px;
     width: 80%;
@@ -31,7 +26,6 @@ hr.sub {
     border-top: solid 1px gray;
     padding: 0;
 }
-
 a {
     text-decoration: none;
     font-weight: bold;
@@ -43,11 +37,9 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
-
 .content li {
     margin-bottom: 8px;
 }
-
 .container {
     position: relative;
     /*top: 55px;*/
@@ -56,18 +48,15 @@ a:hover {
     margin: auto;
     margin-bottom: 20px;
 }
-
 .content,
 .badge-text {
     background-color: #e1dbd6; /*#d9d9d9;*/
     padding: 1px 10px;
     margin: 0 12px;
 }
-
 .badge-info {
     margin: 30px auto;
 }
-
 .img-block {
     background-color: #e1dbd6;
     width: 70%;
@@ -75,21 +64,18 @@ a:hover {
     margin-top: 0;
     padding: 15px;
 }
-
 img.badge {
     display: block;
     width: 100%;
     height: 100%;
     margin: auto;
 }
-
 p.caption {
     padding: 7px 4px;
     text-align: center;
     font-size: 1em;
     margin: auto;
 }
-
 table {
     padding: 0;
     border-collapse: collapse;

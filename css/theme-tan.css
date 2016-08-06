@@ -1,0 +1,36 @@
+body {
+    background-color: #d7cec7;
+    color: #000;
+}
+.content, .badge-text,
+.img-block, td {
+    background-color: #e1dbd6;
+}
+.tblhead, .toc {
+    background-color: #4485B4;
+    color: #e9e5e2;
+}
+td, th, .tblhead {
+    border-color: #184668;
+}
+a {
+    color: #0000b3;
+}
+@media only screen and (min-width: 768px) {
+    hr.sup {
+        border-color: #2876AE;
+    }
+    .content-nav {
+        background-color: #e1dbd6;
+    }
+    .content-nav a,
+    .content-nav a:visited {
+        background-color: #4485B4;
+        color: #e9e5e2;
+        border-color: #184668;
+    }
+    .content-nav a:hover {
+        background-color: #184668;
+        color: #e1dbd6;
+    }
+}
