@@ -1,11 +1,23 @@
 body {
     background-color: #ffeaa3;
-    color: #000000;
+    color: #1d2f2a;
 }
+/*p {
+    color: #141f1c;
+}*/
 .content,
 .badge-text,
-.img-block {
+.img-block,
+td {
     background-color: #fff3cc;
+}
+.tblhead,
+.toc {
+    background-color: #ffad33;
+    color: black;
+}
+td, th, .tblhead {
+    border-color: #b36b00;
 }
 a {
     color: #8e3500;
@@ -13,5 +25,18 @@ a {
 @media only screen and (min-width: 768px) {
     hr.sup {
         border-color: #ff9800;
+    }
+    .content-nav {
+        background-color: #fff3cc;
+    }
+    .content-nav a,
+    .content-nav a:visited {
+        background-color: #ffad33;
+        color: #1d2f2a;
+        border-color: #b36b00;
+    }
+    .content-nav a:hover {
+        background-color: #b36b00;
+        color: #000;
     }
 }
