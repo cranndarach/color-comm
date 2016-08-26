@@ -82,4 +82,4 @@ var getCookies = function() {
     }
 }
 
-getCookies();
+//getCookies();
