@@ -185,6 +185,7 @@ navdec {
         height: 100%;
         width: 15%;
         z-index: 9;
+        overflow-y: scroll;
     }
     .content-nav span {
         display: none;

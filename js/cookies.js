@@ -81,3 +81,5 @@ var getCookies = function() {
         console.log("Found font cookie.");
     }
 }
+
+getCookies();
